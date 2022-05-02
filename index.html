@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+  <title>Encriptador-texto</title>
+</head>
+
+<body>
+
+  <div class="contenedor">
+
+    <main class="contenido-principal">
+
+      <section class="seccion-1">
+
+        <header class="cabecera">
+          <div class="logo-alura">
+            <img src="img/imagenes/a.png" alt="logo_alura" />
+          </div>
+          <div class="titulo">
+            <h1>> Encriptador de texto</h1>
+          </div>
+        </header>
+
+        <div class="caja-texto-1">
+          <textarea class="textarea txtarea-1" name="" id="caja1" cols="30" rows="10"
+            placeholder="ingrese texto aqui"></textarea>
+        </div>
+        <div class="icono-texto">
+          <img src="img/iconos/exclamacion.png" alt="" />
+          <span>Solo letras minúsculas y sin acentos.</span>
+        </div>
+        <div class="botones">
+          <input type="button" class="boton btn-encriptar" value="Encriptar!" onclick="encriptar(caja1)" />
+          <input type="button" class="boton btn-desencriptar" value="Desencriptar!" onclick="desencriptar(caja1)" />
+        </div>
+
+      </section>
+
+      <section class="seccion-2">
+        <div class="caja-texto-2">
+          <div id="caja_2" class="caja-resultados">
+            <textarea class="textarea txtarea-2" name="" id="caja2" cols="30" rows="10"></textarea>
+          </div>
+          <div id="imagentexto" class="imagen-texto">
+            <div><img src="img/imagenes/Muñeco.png" alt="" /></div>
+            <div class="texto-transferencia">
+              <p class="p-1">Ningún mensaje fue encontrado</p>
+              <p class="p-2">Ingresa el texto que desees encriptar o desencriptar</>
+            </div>
+          </div>
+          <div id="boton_3" class="boton-copiar">
+            <input id="boton-3" class="boton btn-copiar" type="button" value="Copiar" onclick="copiarTexto();" />
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+      <div class="texto-rodapie">
+        <span>Sebastian Belmonte Morales - Dios es Bueno ®</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- logica js -->
+
+  <script src="js/script.js"></script>
+
+  <!-- logica js -->
+
+</body>
+
+</html>
